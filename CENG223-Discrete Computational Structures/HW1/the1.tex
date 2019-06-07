@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+
+
+\usepackage[hmargin=3cm,vmargin=6.0cm]{geometry}
+%\topmargin=0cm
+\topmargin=-2cm
+\addtolength{\textheight}{6.5cm}
+\addtolength{\textwidth}{2.0cm}
+%\setlength{\leftmargin}{-5cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+%misc libraries goes here
+%\usepackage{fitch}
+
+
+\begin{document}
+
+\section*{Student Information } 
+%Write your full name and id number between the colon and newline
+%Put one empty space character after colon and before newline
+Full Name : ERTUGRUL AYPEK \\
+Id Number : 2171270 \\
+\\
+% Write your answers below the section tags
+\section*{Answer 1}
+1-
+
+\begin{table}[H]
+	\centering
+	\caption{Tautology for 1.1}
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+	\hline
+	\textbf{$p$} & \textbf{$q$} & \textbf{$p \rightarrow q$} & \textbf{$\neg q \vee(p \rightarrow q)$} & \textbf{$\neg q \wedge(p \rightarrow q)$} & \textbf{$\neg p$} & \textbf{$(\neg q \wedge (p \rightarrow q)) \rightarrow \neg p$} \\
+	\hline
+	T & T & F & T & F & F & T  \\ \hline
+	T & F & T & F & F & F & T \\ \hline
+	F & T & F & T & F & T & T \\ \hline
+	F & F & T & T & T & T & T \\ 
+	\hline
+	
+	\end{tabular}
+	
+\end{table}
+
+
+\begin{flushleft}
+\textbf{2-}
+\end{flushleft}
+
+\begin{table}[H]
+	\centering
+	\caption{Tautology for 1.2}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+	\hline
+	\textbf{$p$} & \textbf{$q$} & \textbf{$r$} & \textbf{$\neg p$} & \textbf{$p \vee q$} & \textbf{$\neg p \vee r$} & \textbf{$(p \vee q) \wedge ( \neg p \vee r)$} & \textbf{$q \vee r$} & \textbf{$((p \vee q) \wedge ( \neg p \vee r)) \rightarrow (q \vee r)$}	\\
+	\hline
+	T & T & T & F & T & T & T & T & T \\ \hline
+	T & T & F & F & T & F & F & T & T \\ \hline 
+	T & F & T & F & T & T & T & T & T \\ \hline 
+	T & F & F & F & T & F & F & F & T \\ \hline
+	F & T & T & T & T & T & T & T & T \\ \hline
+	F & T & F & T & T & T & T & T & T \\ \hline
+	F & F & T & T & F & T & F & T & T \\ \hline
+	F & F & F & T & F & T & F & F & T \\
+	\hline
+	
+	
+	
+	
+	\end{tabular}
+\end{table}
+
+\section*{Answer 2}
+Showing (p $\rightarrow$ q) $\vee$ (p $\rightarrow$ r) and ($\neg$ q $\wedge$ $\neg$ r)$\rightarrow$ $\neg$ p are logically equivalent by deducing the right hand side from left hand side: \\
+\\
+(p $\rightarrow$ q) $\vee$ (p $\rightarrow$ r) $\equiv$ p $\rightarrow$ (q$\vee$r) .........\textit{from Table 7}
+\\
+(p $\rightarrow$ q) $\vee$ (p $\rightarrow$ r) $\equiv$ $\neg$(q $\vee$ r) $\rightarrow$ $\neg$ p ......... \textit{from Table 7}
+\\
+(p $\rightarrow$ q) $\vee$ (p $\rightarrow$ r) $\equiv$ ($\neg$ q $\wedge$ $\neg$ r)$\rightarrow$ $\neg$ p ......... \textit{from Table 6, De Morgan’s laws}
+
+
+
+
+
+
+\section*{Answer 3}
+1.a) For every cat there exists some dogs such that they are friends. \\
+1.b) Some cats are friends of all dogs\\ \\
+
+2.a) $\forall$x$\forall$y($\neg$Customer(x)$\wedge$Meal(y) $\rightarrow$ $\neg$ Eats(x,y)) \\
+2.b) $\neg$($\forall$x$\forall$y(Chef(x)$\wedge$Meal(y)$\rightarrow$Cooks(x,y)))\\
+2.c)
+2.d) $\forall$x$\exists$y$\exists$z(Chef(x)$\rightarrow$Chef(z)$\wedge$(Meal(y)$\rightarrow$($\neg$Cook(x,y)$\wedge$Cooks(z,y)$\wedge$Knows(x,z)))
+
+\section*{Answer 4}
+
+
+\section*{Answer 5}
+
+
+\section*{Answer 6}
+
+
+
+\end{document}
+
+​
+
